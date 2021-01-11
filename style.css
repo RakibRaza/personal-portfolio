@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #696969;
+}
+/* Global CSS */
+h1 {
+  font-size: 3rem;
+  color: #ec4c7a;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+p {
+  margin: 1rem 0;
+}
+.text-center {
+  text-align: center;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 4rem 0;
+  max-width: 1170px;
+}
+.btn-primary {
+  text-decoration: none;
+  display: inline-block;
+  background: #ec4b75;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
+}
+
+/* Hero section start */
+.hero {
+  background: url("./images/header-bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.half-width img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.half-width {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .half-width {
+    float: left;
+    margin: 0 2%;
+    width: calc(50% - 4%);
+  }
+}
+@media screen and (min-width: 992px) {
+  .info {
+    margin-top: 100px;
+  }
+}
+/* Hero section end */
+/* About section start */
+.about {
+  background: url("./images/biography-bg.png") no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .about-text {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about-text {
+    margin-top: 200px;
+  }
+}
+/* Portfolio section start */
+.portfolio {
+  background: url("./images/latest-work-bg.png") no-repeat;
+  background-size: cover;
+}
+.portfolio h2 {
+  text-align: center;
+  margin: 2rem 0 3rem;
+}
+.single-work img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.middle-work {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .single-work {
+    float: left;
+    width: 32%;
+  }
+  .middle-work {
+    margin: 0 2%;
+  }
+}
+
+/* testimonial section start */
+.testimonial {
+  background: url("./images/footer-bg.png") no-repeat;
+  background-size: cover;
+}
+.testimonial-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  max-width: 30rem;
+}
+.client {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+.contact {
+  background: linear-gradient(to right, #ec4f8f, #ed4b73);
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 2.5rem 0;
+  box-shadow: 10px 10px 30px gray;
+}
+
+footer p {
+  text-transform: capitalize;
+  margin-top: 4rem;
+}
+footer a {
+  text-decoration: none;
+  color: #ec4b75;
+}
+footer a:hover {
+  color: #696969;
+}
